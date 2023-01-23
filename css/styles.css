@@ -1,0 +1,67 @@
+/* above 800px wide - desktop first */
+html {
+  font-size: 4px;
+}
+
+.green {
+  outline: 5px solid green;
+}
+
+p {
+  background-color: red;
+  font-family: 'Roboto Mono', monospace;
+  color: pink;
+  /* rems proportional to the font-size on the root element(html) on page */
+  font-size: 3rem;
+}
+
+.cool {
+  font-size: 10px;
+  background-color: blue;
+  font-family: 'Alexandria', sans-serif;
+}
+
+.big {
+  font-size: 15rem;
+}
+
+.cool__card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.cool__card {
+  width: 40%;
+  background-color: lightblue;
+}
+
+.cool__img {
+  width: 100%;
+}
+
+.hot {
+  font-size: 10px;
+  background-color: red;
+}
+
+.hot img {
+  width: 20%;
+}
+
+h3 {
+  font-size: 5em;
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  p {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    background-color: green;
+  }
+}

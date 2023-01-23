@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- this is the root element of the page -->
+<html lang="en">
+
+<!-- html that describes the website -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>browser tab</title>
+  <script src="https://kit.fontawesome.com/c0b823850e.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,100;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;600&family=Roboto+Mono:ital,wght@0,400;1,100;1,700&display=swap"
+    rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- body contains html that makes up the view -->
+
+<body>
+  <header>
+    <form>
+      <input type="text" id="name" name="name" required>
+      <input type="number" id="number" name="number" min="0" max="100" required>
+      <button id="send" type="button">send stuff</button>
+    </form>
+  </header>
+
+  <main>
+    <!-- use BEM for classnaming convention -->
+    <section class="cool">
+      <h3 class="cool__title">Cool Section</h3><i class="big fas fa-yin-yang"></i><i class="big fas fa-x-ray"></i>
+
+      <div class="cool__card-wrap">
+        <section class="cool__card">
+          <h4 class="cool__card-title">some title</h4>
+          <img class="cool__img" alt="some image" src="images/covid-cool.png">
+          <p class="cool_description">Cool card description</p>
+        </section>
+
+        <section class="cool__card">
+          <h4 class="cool__card-title">some title</h4>
+          <img class="cool__img" alt="some image" src="images/covid-cool.png">
+          <p class="cool_description">Cool card description</p>
+        </section>
+
+        <section class="cool__card">
+          <h4 class="cool__card-title">some title</h4>
+          <img class="cool__img" alt="some image" src="images/covid-cool.png">
+          <p class="cool_description">Cool card description</p>
+        </section>
+
+        <section class="cool__card">
+          <h4 class="cool__card-title">some title</h4>
+          <img class="cool__img" alt="some image" src="images/covid-cool.png">
+          <p class="cool_description">Cool card description</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="hot">
+      <h3 class="hot__title">Hot Section</h3>
+      <div id="cards" class="hot__card-wrap">
+
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <!-- script tags at bottom of body so they are the last to load -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
